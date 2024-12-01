@@ -147,6 +147,34 @@
         </div>
       </div>
 
+      <div class="md:grid md:grid-cols-3 md:gap-4">
+        <div class="p-8 md:col-span-1">
+          <h3 class="heading">
+            {{ t("settings.kernel_interceptor") }}
+          </h3>
+          <p class="my-1 text-secondaryLight">
+            {{ t("settings.kernel_interceptor_description") }}
+          </p>
+        </div>
+        <div class="space-y-8 p-8 md:col-span-2">
+          <section class="flex flex-col space-y-2">
+            <h4 class="font-semibold text-secondaryDark">
+              {{ t("settings.kernel_interceptor") }}
+            </h4>
+            <AppInterceptor :is-tooltip-component="false" />
+          </section>
+          <section
+            v-for="[id, settings] in kernelInterceptorsWithSettings"
+            :key="id"
+          >
+            <h4 class="font-semibold text-secondaryDark">
+              {{ settings.title(t) }}
+            </h4>
+            <component :is="settings.component" />
+          </section>
+        </div>
+      </div>
+
       <template v-if="platform.ui?.additionalSettingsSections?.length">
         <template
           v-for="item in platform.ui?.additionalSettingsSections"
@@ -185,6 +213,7 @@ import { pipe } from "fp-ts/function"
 import * as O from "fp-ts/Option"
 import * as A from "fp-ts/Array"
 import { platform } from "~/platform"
+import { KernelInterceptorService } from "~/services/kernel-interceptor.service"
 
 const t = useI18n()
 const colorMode = useColorMode()
@@ -193,7 +222,24 @@ usePageHead({
   title: computed(() => t("navigation.settings")),
 })
 
-const interceptorService = useService(InterceptorService)
+const kernelInterceptorService: KernelInterceptorService = useService(
+  KernelInterceptorService
+)
+const kernelInterceptorsWithSettings = computed(() =>
+  pipe(
+    kernelInterceptorService.available.value,
+    A.filterMap((kernelInterceptor) =>
+      kernelInterceptor.settingsEntry
+        ? O.some([
+            kernelInterceptor.id,
+            kernelInterceptor.settingsEntry,
+          ] as const)
+        : O.none
+    )
+  )
+)
+
+const interceptorService: InterceptorService = useService(InterceptorService)
 const interceptorsWithSettings = computed(() =>
   pipe(
     interceptorService.availableInterceptors.value,
