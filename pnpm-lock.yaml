@@ -946,7 +946,7 @@ importers:
         version: link:../hoppscotch-kernel
       '@hoppscotch/plugin-appload':
         specifier: github:CuriousCorrelation/tauri-plugin-hoppscotch-appload
-        version: https://codeload.github.com/CuriousCorrelation/tauri-plugin-hoppscotch-appload/tar.gz/c698e43730b0078135b680e76eabfdee5e3d59df
+        version: https://codeload.github.com/CuriousCorrelation/tauri-plugin-hoppscotch-appload/tar.gz/20fa49e0fd108bb8ffb9a7bd166407a8c0ee30c7
       '@hoppscotch/ui':
         specifier: 0.2.1
         version: 0.2.1(eslint@9.12.0(jiti@2.3.3))(terser@5.34.1)(typescript@5.7.2)(vite@5.4.11(@types/node@22.9.3)(sass@1.80.3)(terser@5.34.1))(vue@3.5.12(typescript@5.7.2))
@@ -1121,7 +1121,7 @@ importers:
     dependencies:
       '@hoppscotch/plugin-relay':
         specifier: github:CuriousCorrelation/tauri-plugin-hoppscotch-relay
-        version: https://codeload.github.com/CuriousCorrelation/tauri-plugin-hoppscotch-relay/tar.gz/f28eecee37f5ca2491ad326e909540d5a1c18534
+        version: https://codeload.github.com/CuriousCorrelation/tauri-plugin-hoppscotch-relay/tar.gz/7a4f215b433d5d3ea783cc1b764d8d3da0dbcb33
       '@tauri-apps/api':
         specifier: 2.1.1
         version: 2.1.1
@@ -1134,6 +1134,9 @@ importers:
       '@tauri-apps/plugin-shell':
         specifier: 2.0.1
         version: 2.0.1
+      aws4fetch:
+        specifier: 1.0.20
+        version: 1.0.20
       axios:
         specifier: 1.6.2
         version: 1.6.2
@@ -3932,12 +3935,12 @@ packages:
     engines: {node: '^14.19.1 || ^16.14.2 || ^18.0.0 '}
     hasBin: true
 
-  '@hoppscotch/plugin-appload@https://codeload.github.com/CuriousCorrelation/tauri-plugin-hoppscotch-appload/tar.gz/c698e43730b0078135b680e76eabfdee5e3d59df':
-    resolution: {tarball: https://codeload.github.com/CuriousCorrelation/tauri-plugin-hoppscotch-appload/tar.gz/c698e43730b0078135b680e76eabfdee5e3d59df}
+  '@hoppscotch/plugin-appload@https://codeload.github.com/CuriousCorrelation/tauri-plugin-hoppscotch-appload/tar.gz/20fa49e0fd108bb8ffb9a7bd166407a8c0ee30c7':
+    resolution: {tarball: https://codeload.github.com/CuriousCorrelation/tauri-plugin-hoppscotch-appload/tar.gz/20fa49e0fd108bb8ffb9a7bd166407a8c0ee30c7}
     version: 0.1.0
 
-  '@hoppscotch/plugin-relay@https://codeload.github.com/CuriousCorrelation/tauri-plugin-hoppscotch-relay/tar.gz/f28eecee37f5ca2491ad326e909540d5a1c18534':
-    resolution: {tarball: https://codeload.github.com/CuriousCorrelation/tauri-plugin-hoppscotch-relay/tar.gz/f28eecee37f5ca2491ad326e909540d5a1c18534}
+  '@hoppscotch/plugin-relay@https://codeload.github.com/CuriousCorrelation/tauri-plugin-hoppscotch-relay/tar.gz/7a4f215b433d5d3ea783cc1b764d8d3da0dbcb33':
+    resolution: {tarball: https://codeload.github.com/CuriousCorrelation/tauri-plugin-hoppscotch-relay/tar.gz/7a4f215b433d5d3ea783cc1b764d8d3da0dbcb33}
     version: 0.1.0
 
   '@hoppscotch/ui@0.2.1':
@@ -15844,11 +15847,11 @@ snapshots:
       stringify-object: 3.3.0
       yargs: 17.7.2
 
-  '@hoppscotch/plugin-appload@https://codeload.github.com/CuriousCorrelation/tauri-plugin-hoppscotch-appload/tar.gz/c698e43730b0078135b680e76eabfdee5e3d59df':
+  '@hoppscotch/plugin-appload@https://codeload.github.com/CuriousCorrelation/tauri-plugin-hoppscotch-appload/tar.gz/20fa49e0fd108bb8ffb9a7bd166407a8c0ee30c7':
     dependencies:
       '@tauri-apps/api': 2.1.1
 
-  '@hoppscotch/plugin-relay@https://codeload.github.com/CuriousCorrelation/tauri-plugin-hoppscotch-relay/tar.gz/f28eecee37f5ca2491ad326e909540d5a1c18534':
+  '@hoppscotch/plugin-relay@https://codeload.github.com/CuriousCorrelation/tauri-plugin-hoppscotch-relay/tar.gz/7a4f215b433d5d3ea783cc1b764d8d3da0dbcb33':
     dependencies:
       '@tauri-apps/api': 2.1.1
 
