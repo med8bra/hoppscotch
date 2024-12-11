@@ -1009,11 +1009,71 @@ importers:
         specifier: ^2.0.22
         version: 2.1.6(typescript@5.7.2)
 
+  packages/hoppscotch-desktop/plugin-workspace/tauri-plugin-hoppscotch-appload:
+    dependencies:
+      '@tauri-apps/api':
+        specifier: ^2.0.0
+        version: 2.1.1
+    devDependencies:
+      '@rollup/plugin-typescript':
+        specifier: ^11.1.6
+        version: 11.1.6(rollup@4.24.0)(tslib@2.8.0)(typescript@5.7.2)
+      rollup:
+        specifier: ^4.9.6
+        version: 4.24.0
+      tslib:
+        specifier: ^2.6.2
+        version: 2.8.0
+      typescript:
+        specifier: ^5.3.3
+        version: 5.7.2
+
+  packages/hoppscotch-desktop/plugin-workspace/tauri-plugin-hoppscotch-appload/examples/tauri-app:
+    dependencies:
+      '@tauri-apps/api':
+        specifier: ^2.0.0-alpha.11
+        version: 2.1.1
+      tauri-plugin-hoppscotch-appload-api:
+        specifier: file:../../
+        version: link:../..
+    devDependencies:
+      '@sveltejs/vite-plugin-svelte':
+        specifier: ^1.0.1
+        version: 1.4.0(svelte@3.59.2)(vite@3.2.11(@types/node@22.9.3)(sass@1.80.3)(terser@5.34.1))
+      '@tauri-apps/cli':
+        specifier: ^2.0.0-alpha.17
+        version: 2.0.4
+      svelte:
+        specifier: ^3.49.0
+        version: 3.59.2
+      vite:
+        specifier: ^3.0.2
+        version: 3.2.11(@types/node@22.9.3)(sass@1.80.3)(terser@5.34.1)
+
+  packages/hoppscotch-desktop/plugin-workspace/tauri-plugin-hoppscotch-relay:
+    dependencies:
+      '@tauri-apps/api':
+        specifier: ^2.0.0
+        version: 2.1.1
+    devDependencies:
+      '@rollup/plugin-typescript':
+        specifier: ^11.1.6
+        version: 11.1.6(rollup@4.24.0)(tslib@2.8.0)(typescript@5.7.2)
+      rollup:
+        specifier: ^4.9.6
+        version: 4.24.0
+      tslib:
+        specifier: ^2.6.2
+        version: 2.8.0
+      typescript:
+        specifier: ^5.3.3
+        version: 5.7.2
+
   packages/hoppscotch-desktop/tauri-plugin-hoppscotch-appload:
     dependencies:
       '@tauri-apps/api':
         specifier: '>=2.0.0-beta.6'
-        version: 2.0.2
+        version: 2.1.1
     devDependencies:
       '@rollup/plugin-typescript':
         specifier: ^11.1.6
@@ -1032,10 +1092,10 @@ importers:
     dependencies:
       '@tauri-apps/api':
         specifier: ^2.0.0-alpha.11
-        version: 2.0.2
+        version: 2.1.1
       tauri-plugin-hoppscotch-appload-api:
         specifier: file:../../
-        version: file:packages/hoppscotch-desktop/tauri-plugin-hoppscotch-appload
+        version: link:../..
     devDependencies:
       '@sveltejs/vite-plugin-svelte':
         specifier: ^1.0.1
@@ -1388,6 +1448,9 @@ importers:
       '@import-meta-env/unplugin':
         specifier: 0.6.0
         version: 0.6.0(@import-meta-env/cli@0.7.0)(webpack-sources@3.2.3)
+      '@tauri-apps/api':
+        specifier: 2.1.1
+        version: 2.1.1
       axios:
         specifier: 1.7.7
         version: 1.7.7
@@ -11550,9 +11613,6 @@ packages:
   tar@6.2.1:
     resolution: {integrity: sha512-DZ4yORTwrbTj/7MZYq2w+/ZFdI6OZ/f9SFHR+71gIVUZhOQPHzVCLpvRnPgyaMpfWxxk/4ONva3GQSyNIKRv6A==}
     engines: {node: '>=10'}
-
-  tauri-plugin-hoppscotch-appload-api@file:packages/hoppscotch-desktop/tauri-plugin-hoppscotch-appload:
-    resolution: {directory: packages/hoppscotch-desktop/tauri-plugin-hoppscotch-appload, type: directory}
 
   tauri-plugin-store-api@0.0.0:
     resolution: {integrity: sha512-OycAs/ElRxqMh8nATuBE8hJBPjJaeZ8o52N+X4lRxKV6VRrHZ9dRMCDBvEST5Sa1Gxk4kwUPHkBHsmXOL/kt0w==}
@@ -25961,10 +26021,6 @@ snapshots:
       minizlib: 2.1.2
       mkdirp: 1.0.4
       yallist: 4.0.0
-
-  tauri-plugin-hoppscotch-appload-api@file:packages/hoppscotch-desktop/tauri-plugin-hoppscotch-appload:
-    dependencies:
-      '@tauri-apps/api': 2.1.1
 
   tauri-plugin-store-api@0.0.0:
     dependencies:
