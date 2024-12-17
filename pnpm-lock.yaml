@@ -946,7 +946,7 @@ importers:
         version: link:../hoppscotch-kernel
       '@hoppscotch/plugin-appload':
         specifier: github:CuriousCorrelation/tauri-plugin-hoppscotch-appload
-        version: https://codeload.github.com/CuriousCorrelation/tauri-plugin-hoppscotch-appload/tar.gz/20fa49e0fd108bb8ffb9a7bd166407a8c0ee30c7
+        version: https://codeload.github.com/CuriousCorrelation/tauri-plugin-hoppscotch-appload/tar.gz/6a65f626a3e50777351e3de91753288a2c148106
       '@hoppscotch/ui':
         specifier: 0.2.1
         version: 0.2.1(eslint@9.12.0(jiti@2.3.3))(terser@5.34.1)(typescript@5.7.2)(vite@5.4.11(@types/node@22.9.3)(sass@1.80.3)(terser@5.34.1))(vue@3.5.12(typescript@5.7.2))
@@ -4004,8 +4004,8 @@ packages:
     engines: {node: '^14.19.1 || ^16.14.2 || ^18.0.0 '}
     hasBin: true
 
-  '@hoppscotch/plugin-appload@https://codeload.github.com/CuriousCorrelation/tauri-plugin-hoppscotch-appload/tar.gz/20fa49e0fd108bb8ffb9a7bd166407a8c0ee30c7':
-    resolution: {tarball: https://codeload.github.com/CuriousCorrelation/tauri-plugin-hoppscotch-appload/tar.gz/20fa49e0fd108bb8ffb9a7bd166407a8c0ee30c7}
+  '@hoppscotch/plugin-appload@https://codeload.github.com/CuriousCorrelation/tauri-plugin-hoppscotch-appload/tar.gz/6a65f626a3e50777351e3de91753288a2c148106':
+    resolution: {tarball: https://codeload.github.com/CuriousCorrelation/tauri-plugin-hoppscotch-appload/tar.gz/6a65f626a3e50777351e3de91753288a2c148106}
     version: 0.1.0
 
   '@hoppscotch/plugin-relay@https://codeload.github.com/CuriousCorrelation/tauri-plugin-hoppscotch-relay/tar.gz/46253239035db0a52416c6611887a953a0d595d9':
@@ -15916,7 +15916,7 @@ snapshots:
       stringify-object: 3.3.0
       yargs: 17.7.2
 
-  '@hoppscotch/plugin-appload@https://codeload.github.com/CuriousCorrelation/tauri-plugin-hoppscotch-appload/tar.gz/20fa49e0fd108bb8ffb9a7bd166407a8c0ee30c7':
+  '@hoppscotch/plugin-appload@https://codeload.github.com/CuriousCorrelation/tauri-plugin-hoppscotch-appload/tar.gz/6a65f626a3e50777351e3de91753288a2c148106':
     dependencies:
       '@tauri-apps/api': 2.1.1
 
